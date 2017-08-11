@@ -1,0 +1,16 @@
+{{#each posts}}
+	<article id="post-{{incrementer @index}}">
+		<section class="article-header">
+			<h1>{{title}}</h1>
+		</section>
+		<section class="article-content">
+			<p>{{entry}}</p>
+		</section>
+		<section class="article-footer">
+			<p>Author: <a href="#">{{author}}</a></p>
+			<p>Date: {{date}}</p>
+		</section>
+		<button type="button" class="btn-danger btn deleteBtn" id="deleteBtn-{{incrementer @index}}">Delete</button>
+	</article>
+
+{{/each}}

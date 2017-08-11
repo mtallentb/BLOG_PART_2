@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Blog</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">My Blog</a>
+		  <ul class="nav navbar-nav">
+			<li><a href="#" id="blogListLink">Blog List</a></li>
+			<li><a href="#" id="addBlogLink">Add Blog Entry</a></li>
+		  </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container">
+
+		<div id="addBlogEntryView" class="hide">
+			
+			Title:<br>
+			<input type="text" id="blog-title"><br>
+			Date:<br>
+			<input type="text" id="blog-date"><br>
+			Author:<br>
+			<input type="text" id="blog-author"><br>
+			Entry:<br>
+			<textarea type="text" id="blog-entry"></textarea><br>
+			Keywords:<br>
+			<input type="text" id="blog-keywords"><br>
+			<br>
+			<button type="button" class="btn btn-info" id="add-button">Add</button><br>
+
+		</div>
+
+		<div id="blogListView">
+			<div id="newArticles">
+				<!-- User Input from Add Blog Entry View -->
+			</div>
+			<div id="oldArticles">
+				<!-- Loaded from posts.json -->
+			</div>
+		</div>
+
+		<footer>
+			<p>COPYRIGHT MATT BROWN 2017</p>
+		</footer>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="dist/app.js"></script>
+
+</body>
+</html>
